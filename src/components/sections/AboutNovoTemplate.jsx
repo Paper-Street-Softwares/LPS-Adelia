@@ -172,7 +172,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-                className="relative w-full mt-4 tablet1:mt-8 desktop1:mt-10 m-auto overflow-visible mb-10"
+                className="relative w-full mt-4 tablet1:mt-8 desktop1:mt-0 m-auto overflow-visible mb-10 desktop1:mb-0"
               >
                 <div className="relative rounded-3xl shadow-2xl ring-1 ring-black/5">
                   {/* CLIP DA IMAGEM */}
