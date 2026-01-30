@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://www.adeliaadv.com.br//sitemap.xml
