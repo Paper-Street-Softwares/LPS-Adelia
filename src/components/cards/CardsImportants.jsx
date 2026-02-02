@@ -30,7 +30,7 @@ function CardsImportants({ title, paragraph, colorMode }) {
         {paragraph}
       </p>
 
-      <div className="absolute bg-primaryDark border-2 group-hover:bg-white group-hover:border-2 group-hover:border-black duration-700 transition-all rounded-full p-3 -top-6 left-6">
+      <div className="absolute bg-primaryDark border-2 group-hover:bg-white group-hover:border-2 group-hover:border-primaryDark duration-700 transition-all rounded-full p-3 -top-6 left-6">
         <img
           src={imgIcon}
           width={32}

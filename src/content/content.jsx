@@ -237,16 +237,13 @@ const content = {
           paragraph: (
             <p>
               Porque muitas suspensões e invasões{' '}
-              <strong>não acontecem por culpa do usuário</strong>. <br />
+              <strong>não acontecem por culpa do usuário.</strong>. <br />
               Falhas de segurança, denúncias indevidas e abuso da plataforma são
               comuns — e{' '}
               <strong>
                 podem gerar direito à recuperação da conta e indenização
               </strong>
               .
-              <br />
-              <br />
-              Agir rápido pode evitar perdas maiores.
             </p>
           ),
         },

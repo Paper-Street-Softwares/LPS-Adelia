@@ -80,8 +80,9 @@ function HeroTemplateNovo({
       icon: <Clock width={16} />,
       text: (
         <p>
-          Recuperação do acesso em <strong>48 horas</strong> mediante tutela de
-          urgência
+          Recuperação do acesso em{' '}
+          <strong className={`${textDestaque}`}>48 horas</strong> mediante
+          tutela de urgência
         </p>
       ),
     },
@@ -90,7 +91,7 @@ function HeroTemplateNovo({
       text: (
         <p>
           Possibilidade de indenização por danos morais de até{' '}
-          <strong>R$15.000,00</strong>
+          <strong className={`${textDestaque}`}>R$15.000,00</strong>
         </p>
       ),
     },
@@ -107,7 +108,7 @@ function HeroTemplateNovo({
       paddingTopAndBottom={false}
       className={`${backgroundMode}`}
     >
-      <section className="relative min-h-[90vh] w-full pt-[90px] phone2:pt-[90px] pb-[30px] tablet1:pb-[64px] desktop1:pb-[96px] phone3:pt-[100px] tablet1:pt-[170px] desktop1:pt-[180px] flex items-center justify-center overflow-hidden font-mainFont">
+      <section className="relative min-h-[90vh] w-full pt-[90px] phone2:pt-[90px] phone3:pt-[120px] pb-[30px] tablet1:pb-[64px] desktop1:pb-[96px] tablet1:pt-[170px] desktop1:pt-[180px] flex items-center justify-center overflow-hidden font-mainFont">
         {/* Abstract Background Shapes */}
         <div
           className={`absolute top-0 right-[-10px] h-full w-[80%] -skew-x-12 translate-x-2/4 z-0 ${bgFaixaHero}`}
@@ -147,12 +148,12 @@ function HeroTemplateNovo({
               </p>
 
               <div
-                className={`border font-secondFont p-2 rounded-md border-primaryDark text-[8px] phone2:text-[12px] phone3:text-[14px]`}
+                className={`max-w-[340px] font-secondFont p-2 phone3:p-6 bg-white rounded-xl border border-primaryDark text-[8px] phone2:text-[12px] phone3:text-[14px] flex flex-col gap-3`}
               >
                 {topicsCard.map((item, index) => (
-                  <div key={index} className="flex gap-2">
-                    <span className={`${textDestaque}`}>{item.icon}</span>
-                    <p>{item.text}</p>
+                  <div key={index} className="flex gap-2 items-center">
+                    <span className={`text-primaryDark`}>{item.icon}</span>
+                    <p className={`font-bold ${text}`}>{item.text}</p>
                   </div>
                 ))}
               </div>
