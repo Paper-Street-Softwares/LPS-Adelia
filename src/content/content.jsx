@@ -8,7 +8,7 @@ import imgFeatures from '../assets/imgs/features/imgServices.webp'
 import aboutImg from '../assets/imgs/about/aboutImg.webp'
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
-// import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
+import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
 
 import imgSteps from '../assets/imgs/steps/imgSteps.webp'
 
@@ -29,7 +29,7 @@ const currentYear = new Date().getFullYear()
 export const infos = {
   name: 'Dra. Adelia Almeida',
   email: 'contato', // Email desejado pelo cliente
-  emailSecundario: 'A_Definir', // Email desejado pelo cliente
+  emailSecundario: 'adeliaas@outlook.com ', // Email desejado pelo cliente
   domain: 'adeliaadv.com.br', // Sem "www"
   phone: {
     ddd: '21',
@@ -105,12 +105,11 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'Recuperação de redes sociais',
+      miniTag: 'Recuperação de redes sociais no RJ e SP',
       title: (
         <h1>
-          Sua conta do <span class="text-image">Instagram</span> foi{' '}
+          Sua <span class="text-image">rede social</span>{' '}
           <span className="destaque relative italic font-light">
-            hackeada, invadida ou suspensa
             {/* <span>
               <svg
                 className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
@@ -138,14 +137,14 @@ const content = {
               </svg>
             </span> */}
           </span>
-          ?
+          foi banida, suspensa, hackeada ou desativada?
         </h1>
       ),
       subtitle: (
         <p>
           Perder o controle da sua conta pode parecer o fim, mas estamos aqui
-          para resolver isso por você. <strong> Você tem direitos</strong>, e
-          nós sabemos exatamente como protegê-los!
+          para resolver isso por você. Você tem direitos, e nós sabemos
+          exatamente como protegê-los!
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -154,7 +153,7 @@ const content = {
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Falar com uma advogada',
+      ctaButtonText: 'Tire sua dúvida conosco',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
@@ -261,7 +260,13 @@ const content = {
           ela.
         </h1>
       ),
-      subtitle: '',
+      subtitle: (
+        <>
+          Sua imagem e dados podem ser usados indevidamente para aplicar golpes.
+          <i> Hackers</i> também usam a sua audiência para divulgar produtos
+          ilícitos.
+        </>
+      ),
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
       titleMessageFeature: '100%',
@@ -420,18 +425,17 @@ const content = {
         'Atuação jurídica focada em proteger negócios e perfis nas redes sociais',
       paragraph: (
         <div>
-          Sou advogada com atuação em Direito Público e Privado, com foco em
-          questões que envolvem o ambiente digital. Atendo pessoas e empresas
-          que tiveram contas do Instagram, Facebook ou WhatsApp invadidas,
-          suspensas ou perdidas — especialmente quando essas plataformas são
-          ferramentas de trabalho.
+          Sou advogada especialista em direito digital. Atendo pessoas e
+          empresas que tiveram contas do Instagram, Facebook ou WhatsApp
+          invadidas, suspensas ou perdidas — especialmente quando essas
+          plataformas são ferramentas de trabalho.
           <br />
           <br />
           Meu trabalho é orientar, agir rápido e buscar a recuperação da conta e
-          a proteção dos direitos da cliente. Cada caso é tratado com
-          estratégia, clareza e responsabilidade, porque sei que perder uma rede
-          social não é só perder um perfil — é perder renda, contatos e
-          credibilidade.
+          a proteção dos seus direitos. Cada caso é tratado com estratégia,
+          clareza e responsabilidade, porque sei que perder uma rede social não
+          é só perder um perfil — e ter a privacidade invadida, é perder renda,
+          contatos e credibilidade.
         </div>
       ),
 
@@ -451,24 +455,24 @@ const content = {
       titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
       ctaButtonText: 'Falar diretamente comigo',
-      // aboutSocial: {
-      //   img: {
-      //     img: aboutSocialImg,
-      //     alt: `Foto do Instagram do ${infos.name}`,
-      //     altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
-      //   },
-      //   miniTag: 'REDES SOCIAIS',
-      //   title: 'Conecte-se conosco',
-      //   subtitle:
-      //     'Aproveite nossas redes sociais para mantermos contato e ficar por dentro dos lançamentos, novidades e atualizações do mercado imobiliário.',
-      //   paragraph: <p></p>,
-      //   labelInstagram: 'Siga-nos no Instagram',
-      //   labelFacebook: 'Siga-nos no Facebook',
-      //   labelLinkedin: 'Siga-nos no LinkedIn',
-      //   labelX: 'Siga-nos no X',
-      //   labelTiktok: 'Siga-nos no Tik Tok',
-      //   labelYoutube: 'Siga-nos no Youtube',
-      // },
+      aboutSocial: {
+        img: {
+          img: aboutSocialImg,
+          alt: `Foto do Instagram do ${infos.name}`,
+          altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
+        },
+        miniTag: 'REDES SOCIAIS',
+        title: 'Conecte-se conosco',
+        subtitle:
+          'Aproveite nossas redes sociais para mantermos contato e ficar por dentro dos lançamentos, novidades e atualizações do mercado imobiliário.',
+        paragraph: <p></p>,
+        labelInstagram: 'Siga-nos no Instagram',
+        labelFacebook: 'Siga-nos no Facebook',
+        labelLinkedin: 'Siga-nos no LinkedIn',
+        labelX: 'Siga-nos no X',
+        labelTiktok: 'Siga-nos no Tik Tok',
+        labelYoutube: 'Siga-nos no Youtube',
+      },
     },
     // team: {
     //   miniTag: ' A_Definir',
@@ -561,12 +565,12 @@ const content = {
         },
         label4: {
           icon: <Check />,
-          text: 'Proteção contra uso indevido da sua imagem e dos seus dados',
-        },
-        label5: {
-          icon: <Check />,
           text: 'Acompanhamento do caso até a solução, com comunicação direta',
         },
+        // label5: {
+        //   icon: <Check />,
+        //   text: 'Acompanhamento do caso até a solução, com comunicação direta',
+        // },
       },
       // subtitleDireita: (
       //   <p className="gap-3 flex font-mainFont opacity-60 mt-1">

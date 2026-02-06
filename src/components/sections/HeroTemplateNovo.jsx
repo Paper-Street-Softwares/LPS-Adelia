@@ -81,8 +81,10 @@ function HeroTemplateNovo({
       text: (
         <p>
           Recuperação do acesso em{' '}
-          <strong className={`${textDestaque}`}>48 horas</strong> mediante
-          tutela de urgência
+          <strong className={`text-wppDark font-bold underline`}>
+            48 horas
+          </strong>{' '}
+          mediante tutela de urgência
         </p>
       ),
     },
@@ -90,8 +92,10 @@ function HeroTemplateNovo({
       icon: <CircleDollarSign width={16} />,
       text: (
         <p>
-          Possibilidade de indenização por danos morais de até{' '}
-          <strong className={`${textDestaque}`}>R$15.000,00</strong>
+          Possibilidade de indenização por danos morais e patrimoniais de até{' '}
+          <strong className={`text-wppDark font-bold underline`}>
+            R$80.000,00
+          </strong>
         </p>
       ),
     },
@@ -136,24 +140,25 @@ function HeroTemplateNovo({
                 {content.texts.hero.miniTag}
               </div>
               <h1
-                className={` desktop1:text-start text-[17px] phone2:text-[28px] phone3:text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.1] md:leading-[1.2] lg:leading-[1.1] ${text} `}
+                className={`desktop1:text-start text-[17px] phone2:text-[28px] phone3:text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.1] md:leading-[1.0] ${text} `}
               >
                 {content.texts.hero.title}
               </h1>
 
               <p
-                className={`text-start desktop1:text-start text-[8px] phone2:text-[12px] phone3:text-[14px] md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight ${textOpacity}`}
+                className={`text-start desktop1:text-start text-[9.2px] phone2:text-[13.8px] phone3:text-[16.1px] md:text-[23px] leading-relaxed max-w-lg font-secondFont font-extralight ${text}`}
               >
                 {content.texts.hero.subtitle}
               </p>
 
               <div
-                className={`max-w-[340px] font-secondFont p-2 phone3:p-6 bg-white rounded-xl border border-primaryDark text-[8px] phone2:text-[12px] phone3:text-[14px] flex flex-col gap-3`}
+                className={`max-w-[360px] font-secondFont p-2 phone3:p-6 bg-terciary shadow-xl rounded-xl border border-wppDark text-[9.6px] phone2:text-[14.4px] phone3:text-[16.8px] flex flex-col gap-3`}
               >
+                <h1>Ao entrar com ação, você pode:</h1>
                 {topicsCard.map((item, index) => (
-                  <div key={index} className="flex gap-2 items-center">
-                    <span className={`text-primaryDark`}>{item.icon}</span>
-                    <p className={`font-bold ${text}`}>{item.text}</p>
+                  <div key={index} className="flex gap-2 items-start">
+                    <span className={`text-wppDark`}>{item.icon}</span>
+                    <p className={`font-medium ${text}`}>{item.text}</p>
                   </div>
                 ))}
               </div>
@@ -190,20 +195,20 @@ function HeroTemplateNovo({
                   colorMode === 'light' ? 'opacity-90' : 'opacity-20'
                 } w-full`}
               /> */}
-              <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground w-full">
-                {/* <div className="relative flex ">
+              {/* <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground w-full">
+                <div className="relative flex ">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-600 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span>
                 </div>
                 <span className={`font-secondFont font-light ${textOpacity}`}>
                   {content.texts.hero.obsHero.text}
-                </span> */}
+                </span>
                 <img
                   src={imgBottomHero}
                   alt="imagem ilustrativa de clientes"
                   className="rounded-md"
                 />
-              </div>
+              </div> */}
             </motion.div>
 
             {/* Image */}

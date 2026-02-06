@@ -37,13 +37,13 @@ function FooterNovoTemplate({
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       iconColor = 'text-primaryDark/60'
-      backgroundMode = 'bg-terciary/60'
+      backgroundMode = 'bg-white'
       break
     case 'dark':
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       iconColor = 'text-primaryLight/80'
-      backgroundMode = 'bg-black'
+      backgroundMode = 'bg-darkOpacity'
       break
     default:
       text = 'text-corTitulosBranca'
@@ -53,7 +53,10 @@ function FooterNovoTemplate({
   }
 
   return (
-    <SectionArea className={`${backgroundMode} pb-4`} paddingbot={false}>
+    <SectionArea
+      className={`${backgroundMode} pb-4`}
+      paddingTopAndBottom={false}
+    >
       <SectionWrapper>
         <footer className={`${textOpacity}`}>
           <div className="container mx-auto">
@@ -61,11 +64,11 @@ function FooterNovoTemplate({
               className={`grid sm:grid-cols-2 lg:grid-cols-3 ${grid} items-start gap-12 tablet2:gap-2 desktop1:gap-12 mb-8 w-full`}
             >
               {/* Logo e infos */}
-              <div className="space-y-6">
+              {/* <div className="space-y-6">
                 <img
                   src={content.texts.navbar.logo.img}
                   alt={content.texts.navbar.logo.alt}
-                  className="w-[70%]"
+                  className="w-[50%]"
                   width={187}
                   height={119}
                 />
@@ -103,10 +106,10 @@ function FooterNovoTemplate({
                     youtube
                   />
                 </div>
-              </div>
+              </div> */}
 
               {/* Links rápidos */}
-              <div className="flex flex-col justify-center sm:items-center gap-8 tablet2:justify-center ">
+              {/* <div className="flex flex-col justify-center sm:items-center gap-8 tablet2:justify-center ">
                 <div className="w-fit ">
                   <h1
                     className={`font-bold font-secondFont text-lg mb-6 ${text}`}
@@ -114,30 +117,42 @@ function FooterNovoTemplate({
                     Links Rápidos
                   </h1>
                   <ul className="space-y-4 font-secondFont font-light">
-                    {labels.map((item, index) => (
-                      <li key={item}>
-                        <Link
-                          to={ids[index]}
-                          aria-label={`Link para ${item}`}
-                          smooth={true}
-                          duration={500}
-                          offset={-90}
-                          spy={true}
-                          hashSpy={true}
-                          tag="a"
-                          href={`#${ids[index]}`}
-                          className="cursor-pointer bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px]"
-                        >
-                          {item}
-                        </Link>
-                      </li>
-                    ))}
+                    {labels.map((item, index) => {
+                      const id = ids[index]
+
+                      return (
+                        <li key={id}>
+                          <a
+                            href={`#${id}`}
+                            aria-label={`Link para ${item}`}
+                            title={item}
+                            data-track={id}
+                            className="cursor-pointer bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px]"
+                            onClick={(e) => {
+                              e.preventDefault()
+                              const el = document.getElementById(id)
+                              if (el) {
+                                const yOffset = -90
+                                const y =
+                                  el.getBoundingClientRect().top +
+                                  window.scrollY +
+                                  yOffset
+
+                                window.scrollTo({ top: y, behavior: 'smooth' })
+                              }
+                            }}
+                          >
+                            {item}
+                          </a>
+                        </li>
+                      )
+                    })}
                   </ul>
                 </div>
-              </div>
+              </div> */}
 
               {/* Contato */}
-              <div className="justify-start tablet2:justify-start flex flex-col gap-6">
+              {/* <div className="justify-start tablet2:justify-start flex flex-col gap-6">
                 <div className="w-fit">
                   <h1
                     className={`font-bold font-secondFont text-lg mb-6 ${text}`}
@@ -187,7 +202,7 @@ function FooterNovoTemplate({
                     )}
                   </ul>
                 </div>
-              </div>
+              </div> */}
 
               {/* Mapa */}
               {mapa && (
