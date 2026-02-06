@@ -144,7 +144,7 @@ function HeroTemplateNovo({
               </p>
 
               <div
-                className={`max-w-[360px] font-secondFont p-2 phone3:p-6 bg-terciary shadow-xl rounded-xl border border-wppDark text-[9.6px] phone2:text-[14.4px] phone3:text-[16.8px] flex flex-col gap-3`}
+                className={`max-w-[360px] font-secondFont p-2 phone3:p-6 bg-terciary shadow-xl rounded-xl border border-primaryDark text-[9.6px] phone2:text-[14.4px] phone3:text-[16.8px] flex flex-col gap-3`}
               >
                 <h1>Ao entrar com ação, você pode:</h1>
                 {topicsCard.map((item, index) => (
