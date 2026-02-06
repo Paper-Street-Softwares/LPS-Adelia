@@ -79,7 +79,13 @@ function HeroTemplateNovo({
     card1: {
       icon: <Clock width={16} />,
       text: (
-        <p>Recuperação do acesso em 48 horas mediante tutela de urgência</p>
+        <p>
+          Recuperação do acesso em{' '}
+          <strong className={`text-[#778aab] font-bold underline`}>
+            48 horas
+          </strong>{' '}
+          mediante tutela de urgência
+        </p>
       ),
     },
     card2: {
@@ -87,7 +93,9 @@ function HeroTemplateNovo({
       text: (
         <p>
           Possibilidade de indenização por danos morais e patrimoniais de até{' '}
-          R$80.000,00
+          <strong className={`text-[#778aab] font-bold underline`}>
+            R$80.000,00
+          </strong>
         </p>
       ),
     },
@@ -144,17 +152,16 @@ function HeroTemplateNovo({
               </p>
 
               <div
-                className={`max-w-[360px] font-secondFont p-2 phone3:p-6 bg-terciary shadow-xl rounded-xl border border-primaryDark text-[9.6px] phone2:text-[14.4px] phone3:text-[16.8px] flex flex-col gap-3`}
+                className={`max-w-[360px] font-secondFont p-2 phone3:p-6 bg-terciary shadow-xl rounded-xl border border-[#778aab] text-[9.6px] phone2:text-[14.4px] phone3:text-[16.8px] flex flex-col gap-3`}
               >
                 <h1>Ao entrar com ação, você pode:</h1>
                 {topicsCard.map((item, index) => (
                   <div key={index} className="flex gap-2 items-start">
-                    <span className={`text-primaryDark`}>{item.icon}</span>
+                    <span className={`text-[#778aab]`}>{item.icon}</span>
                     <p className={`font-medium ${text}`}>{item.text}</p>
                   </div>
                 ))}
               </div>
-
               <div className="flex flex-col gap-4 pt-4">
                 <ButtonReflexo
                   icon={
