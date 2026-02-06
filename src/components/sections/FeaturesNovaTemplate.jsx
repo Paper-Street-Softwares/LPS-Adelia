@@ -112,7 +112,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
                       <p className={`font-secondFont text-2xl font-bold mb-2`}>
                         {content.texts.features.titleMessageFeature}
                       </p>
-                      <p className={`text-sm font-secondFont font-light`}>
+                      <p className={`text-md font-secondFont font-light`}>
                         {content.texts.features.subtitleMessageFeature}
                       </p>
                     </div>
@@ -216,12 +216,12 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
                             {feature.icon}
                           </div>
                           <h1
-                            className={`font-secondFont font-bold text-lg mb-2 ${text} ${hoverTextCard} transition-all`}
+                            className={`font-secondFont font-bold text-xl leading-6 mb-2 ${text} ${hoverTextCard} transition-all`}
                           >
                             {feature.title}
                           </h1>
                           <p
-                            className={`text-sm font-secondFont font-light ${textOpacity} ${hoverTextCard} transition-all`}
+                            className={`text-md font-secondFont font-light ${textOpacity} ${hoverTextCard} transition-all`}
                           >
                             {feature.subtitle}
                           </p>

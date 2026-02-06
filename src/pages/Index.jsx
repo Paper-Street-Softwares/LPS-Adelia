@@ -66,6 +66,7 @@ export default function Index() {
               ButtonModal={false}
               benefits={false}
             />
+            <SocialMediaTemplate colorMode={colorMode} />
             <CtaNovoTemplate colorMode={colorMode} />
             <StepsNovoTemplate colorMode={colorMode} />
             <FooterNovoTemplate
@@ -75,8 +76,8 @@ export default function Index() {
               phoneSecond={false}
               expediente={false}
               adress={false}
-              email={true}
-              emailSecond={false}
+              email={false}
+              emailSecond={true}
               fraseFooter={true} // frase Google LLC
               obs={false}
             />
@@ -85,7 +86,6 @@ export default function Index() {
             {/* <Cards colorMode={colorMode} /> */}
             {/* <Emergency colorMode={colorMode} /> */}
             {/* <Speed colorMode={colorMode} /> */}
-            {/* <SocialMediaTemplate colorMode={colorMode} /> */}
             {/* <FaqNovoTemplate colorMode={colorMode} /> */}
           </Suspense>
         </main>

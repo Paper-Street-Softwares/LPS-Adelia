@@ -55,13 +55,13 @@ function CtaNovoTemplate({ colorMode }) {
               {content.texts.ctaSecondary.title}
             </h2>
             <p
-              className={`text-lg font-secondFont font-light md:text-xl max-w-2xl mx-auto mb-10 ${textOpacity}`}
+              className={`text-xl font-secondFont font-light md:text-2xl max-w-2xl mx-auto mb-10 ${textOpacity}`}
             >
               {content.texts.ctaSecondary.subtitle}
             </p>
 
             <div
-              className={`rounded-lg p-4 mb-4 flex flex-col items-center ${textOpacity}`}
+              className={`rounded-lg p-4 mb-4 flex flex-col items-center text-lg ${textOpacity}`}
             >
               {lisContainer.map((item, index) => (
                 <div
