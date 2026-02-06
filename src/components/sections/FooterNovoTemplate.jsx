@@ -37,7 +37,7 @@ function FooterNovoTemplate({
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       iconColor = 'text-primaryDark/60'
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-terciary/60'
       break
     case 'dark':
       text = 'text-corTitulosBranca'
@@ -221,11 +221,11 @@ function FooterNovoTemplate({
               )}
             </div>
 
-            <hr
+            {/* <hr
               className={`pb-6 border-t ${text} ${
                 colorMode === 'light' ? 'opacity-90' : 'opacity-20'
               } w-full`}
-            />
+            /> */}
 
             {/* Footer Bottom */}
             <div
