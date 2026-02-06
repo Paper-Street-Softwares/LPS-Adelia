@@ -65,13 +65,19 @@ function FooterNovoTemplate({
             >
               {/* Logo e infos */}
               {/* <div className="space-y-6">
-                <img
+               <a
+              className="cursor-pointer"
+              href="/"
+              onClick={() => window.location.reload()}
+              aria-label="recarregar página "
+            >  <img
                   src={content.texts.navbar.logo.img}
                   alt={content.texts.navbar.logo.alt}
                   className="w-[50%]"
                   width={187}
                   height={119}
-                />
+                /> <a/>
+              
                 <p
                   className={`leading-relaxed font-secondFont font-light ${textOpacity}`}
                 >
