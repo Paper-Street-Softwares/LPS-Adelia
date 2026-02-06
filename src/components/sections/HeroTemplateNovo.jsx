@@ -79,13 +79,7 @@ function HeroTemplateNovo({
     card1: {
       icon: <Clock width={16} />,
       text: (
-        <p>
-          Recuperação do acesso em{' '}
-          <strong className={`text-wppDark font-bold underline`}>
-            48 horas
-          </strong>{' '}
-          mediante tutela de urgência
-        </p>
+        <p>Recuperação do acesso em 48 horas mediante tutela de urgência</p>
       ),
     },
     card2: {
@@ -93,9 +87,7 @@ function HeroTemplateNovo({
       text: (
         <p>
           Possibilidade de indenização por danos morais e patrimoniais de até{' '}
-          <strong className={`text-wppDark font-bold underline`}>
-            R$80.000,00
-          </strong>
+          R$80.000,00
         </p>
       ),
     },
@@ -157,7 +149,7 @@ function HeroTemplateNovo({
                 <h1>Ao entrar com ação, você pode:</h1>
                 {topicsCard.map((item, index) => (
                   <div key={index} className="flex gap-2 items-start">
-                    <span className={`text-wppDark`}>{item.icon}</span>
+                    <span className={`text-primaryDark`}>{item.icon}</span>
                     <p className={`font-medium ${text}`}>{item.text}</p>
                   </div>
                 ))}

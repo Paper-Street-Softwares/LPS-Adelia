@@ -108,7 +108,7 @@ const content = {
       miniTag: 'Recuperação de redes sociais no RJ e SP',
       title: (
         <h1>
-          Sua <span class="text-image">rede social</span>{' '}
+          Sua <span class="">rede social</span>{' '}
           <span className="destaque relative italic font-light">
             {/* <span>
               <svg
