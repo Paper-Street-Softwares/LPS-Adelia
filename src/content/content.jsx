@@ -260,9 +260,8 @@ const content = {
       ),
       subtitle: (
         <>
-          Sua imagem e dados podem ser usados indevidamente para aplicar golpes.
-          <i>Hackers</i> também usam a sua audiência para divulgar produtos
-          ilícitos.
+          Não é só o acesso que some, mas também tempo, dinheiro, credibilidade
+          e oportunidades.
         </>
       ),
       imgFeatures: imgFeatures,
@@ -272,8 +271,14 @@ const content = {
       cards: {
         card1: {
           title: 'Quando usam sua foto e seus dados para aplicar golpes',
-          subtitle:
-            'Sua imagem vira arma para enganar outras pessoas — e a culpa pode cair no seu colo.',
+          subtitle: (
+            <>
+              {' '}
+              Sua imagem e dados podem ser usados indevidamente para aplicar
+              golpes. <i>Hackers</i> também usam a sua audiência para divulgar
+              produtos ilícitos.
+            </>
+          ),
           description: (
             <div>
               A_Definir
