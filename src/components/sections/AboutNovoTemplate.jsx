@@ -32,7 +32,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
 
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-terciary/60'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
@@ -70,7 +70,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
     >
       <SectionWrapper>
         <section className="w-full relative overflow-visible">
-          <div className="container mx-auto relative z-10">
+          <div className=" mx-auto relative z-10">
             <div className="grid lg:grid-cols-2 gap-4 desktop1:gap-16 items-center">
               {/* Conteúdo textual */}
               <div className="space-y-8">
@@ -84,7 +84,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                   />
                   <MotionDivDownToUp>
                     <p
-                      className={`font-secondFont font-light text-md tablet1:text-xl leading-relaxed mt-6 ${textOpacity}`}
+                      className={`font-secondFont font-light text-md text-paragraph4 desktop:text-xl leading-relaxed mt-6 ${textOpacity}`}
                     >
                       {content.texts.about.paragraph}
                     </p>

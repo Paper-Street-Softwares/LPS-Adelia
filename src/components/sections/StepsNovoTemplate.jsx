@@ -24,7 +24,7 @@ function StepsNovoTemplate({ colorMode }) {
 
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-secondary'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       stepNumberBg = 'bg-white'
@@ -59,7 +59,7 @@ function StepsNovoTemplate({ colorMode }) {
     <SectionArea className={backgroundMode} data-theme={colorMode}>
       <SectionWrapper>
         <section>
-          <div className="container mx-auto">
+          <div className=" mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               {/* Imagem */}
               <MotionDivDownToUp

@@ -3,7 +3,15 @@ import SectionArea from '../sectionElements/SectionArea'
 import SectionWrapper from '../sectionElements/SectionWrapper'
 import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
 import { motion } from 'framer-motion'
-import { Scale, HomeIcon, Building2, Coins } from 'lucide-react'
+import {
+  Scale,
+  HomeIcon,
+  Building2,
+  Coins,
+  Shield,
+  Users,
+  Clock,
+} from 'lucide-react'
 
 function Cards({ colorMode }) {
   let text,
@@ -18,7 +26,7 @@ function Cards({ colorMode }) {
 
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-secondary/60'
+      backgroundMode = 'bg-terciary/60'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       stepNumberBg = 'bg-white'
@@ -32,7 +40,6 @@ function Cards({ colorMode }) {
       backgroundMode = 'bg-darkOpacity'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
-      backgroundMode = 'bg-dark'
       stepNumberBg = 'bg-dark'
       stepNumberText = 'text-primaryLight'
       lineColor = 'bg-primaryLight/20'
@@ -45,7 +52,6 @@ function Cards({ colorMode }) {
       backgroundMode = 'bg-secondary/60'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
-      backgroundMode = 'bg-secondary/60'
       stepNumberBg = 'bg-white'
       stepNumberText = 'text-primaryDark'
       lineColor = 'bg-primaryDark/20'
@@ -54,14 +60,14 @@ function Cards({ colorMode }) {
       borderT = 'border-t-primaryDark'
   }
   return (
-    <SectionArea className={`bg-gray-50`}>
+    <SectionArea className={`${backgroundMode}`}>
       <SectionWrapper>
         <section id="serviços">
           <div className="container mx-auto">
             <SectionHeaderNovo
-              miniTitle="Atuação Estratégica em Inventários"
-              title="O Inventário conectado ao Direito Civil: Soluções Completas"
-              subtitle="Diferente de uma atuação genérica, aplicamos o Direito Civil de forma integrada para resolver gargalos que travam o processo:"
+              miniTitle="Por que agir agora"
+              title="Mais do que recuperar sua conta, é proteger o que você construiu"
+              subtitle=""
               colorMode={colorMode}
             />
 
@@ -74,23 +80,22 @@ function Cards({ colorMode }) {
                 transition={{ delay: 0.1 }}
               >
                 <div
-                  className={`h-full cursor-pointer border-t-4 ${borderT} hover:shadow-xl transition-shadow duration-300`}
+                  className={`h-full cursor-pointer border-t-4 bg-white ${borderT} hover:shadow-xl transition-shadow duration-300`}
                 >
                   {' '}
                   <div className="pt-8 px-6 pb-8 h-full flex flex-col">
                     <div className="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-primary mb-6">
-                      <Scale className="w-7 h-7" />
+                      <Clock className="w-7 h-7" />
                     </div>
-                    <h3 className="text-xl font-secondFont font-bold text-primary mb-3">
-                      Sucessões + Família
-                    </h3>
+                    <h1 className="text-xl font-secondFont font-bold text-primary mb-3">
+                      Agilidade quando o tempo joga contra você
+                    </h1>
                     <p
                       className={`font-secondFont text-sm ${textOpacity} leading-relaxed flex-grow`}
                     >
-                      Analisamos o regime de bens do casamento ou união estável
-                      para definir exatamente o que é meação (da viúva/o) e o
-                      que é herança. Isso evita cálculos errados e pagamentos
-                      indevidos de imposto.
+                      Quanto mais você demora, menores são as chances de
+                      recuperar a conta. Aqui, seu caso é analisado rapidamente
+                      para evitar prejuízos maiores.
                     </p>
                   </div>
                 </div>
@@ -104,22 +109,20 @@ function Cards({ colorMode }) {
                 transition={{ delay: 0.2 }}
               >
                 <div
-                  className={`h-full cursor-pointer border-t-4 ${borderT} hover:shadow-xl transition-shadow duration-300`}
+                  className={`h-full cursor-pointer border-t-4 bg-white ${borderT} hover:shadow-xl transition-shadow duration-300`}
                 >
                   <div className="pt-8 px-6 pb-8 h-full flex flex-col">
                     <div className="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-primary mb-6">
-                      <HomeIcon className="w-7 h-7" />
+                      <Users className="w-7 h-7" />
                     </div>
-                    <h3 className="text-xl font-secondFont font-bold text-primary mb-3">
-                      Sucessões + Direito Imobiliário
-                    </h3>
+                    <h1 className="text-xl font-secondFont font-bold text-primary mb-3">
+                      Você não enfrenta a plataforma só
+                    </h1>
                     <p
                       className={`font-secondFont text-sm ${textOpacity} leading-relaxed flex-grow`}
                     >
-                      Muitas vezes, os bens deixados estão irregulares. Atuamos
-                      na regularização de escrituras e registros no cartório de
-                      imóveis dentro do próprio inventário, garantindo que a
-                      partilha seja definitiva e legalizada.
+                      Bloqueios injustos, invasões e falhas acontecem. Ter apoio
+                      jurídico muda o jogo e aumenta suas chances de resolver.
                     </p>
                   </div>
                 </div>
@@ -133,23 +136,22 @@ function Cards({ colorMode }) {
                 transition={{ delay: 0.3 }}
               >
                 <div
-                  className={`h-full cursor-pointer border-t-4 ${borderT} hover:shadow-xl transition-shadow duration-300`}
+                  className={`h-full cursor-pointer border-t-4 bg-white ${borderT} hover:shadow-xl transition-shadow duration-300`}
                 >
                   {' '}
                   <div className="pt-8 px-6 pb-8 h-full flex flex-col">
                     <div className="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-primary mb-6">
-                      <Building2 className="w-7 h-7" />
+                      <Shield className="w-7 h-7" />
                     </div>
-                    <h3 className="text-xl font-secondFont font-bold text-primary mb-3">
-                      Sucessões + Direito Empresarial
-                    </h3>
+                    <h1 className="text-xl font-secondFont font-bold text-primary mb-3">
+                      Proteção da sua imagem e do seu negócio
+                    </h1>
                     <p
                       className={`font-secondFont text-sm ${textOpacity} leading-relaxed flex-grow`}
                     >
-                      Se o falecido era sócio de uma empresa, o inventário pode
-                      paralisar o negócio. Atuamos na apuração de haveres e na
-                      representação do espólio perante a sociedade, garantindo
-                      que as quotas não percam valor.
+                      Evite que seus dados e sua imagem continuem sendo usados
+                      de forma indevida, causando golpes, perdas financeiras e
+                      danos à sua reputação.
                     </p>
                   </div>
                 </div>
@@ -163,22 +165,21 @@ function Cards({ colorMode }) {
                 transition={{ delay: 0.4 }}
               >
                 <div
-                  className={`h-full cursor-pointer border-t-4 ${borderT} hover:shadow-xl transition-shadow duration-300`}
+                  className={`h-full cursor-pointer border-t-4 bg-white ${borderT} hover:shadow-xl transition-shadow duration-300`}
                 >
                   <div className="pt-8 px-6 pb-8 h-full flex flex-col">
                     <div className="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-primary mb-6">
-                      <Coins className="w-7 h-7" />
+                      <Scale className="w-7 h-7" />
                     </div>
-                    <h3 className="text-xl font-secondFont font-bold text-primary mb-3">
-                      Sucessões + Obrigações e Contratos
-                    </h3>
+                    <h1 className="text-xl font-secondFont font-bold text-primary mb-3">
+                      Clareza, estratégia e acompanhamento real
+                    </h1>
                     <p
                       className={`font-secondFont text-sm ${textOpacity} leading-relaxed flex-grow`}
                     >
-                      Gerimos as dívidas deixadas pelo falecido. Negociamos com
-                      credores para que as obrigações sejam pagas apenas dentro
-                      das forças da herança, protegendo o patrimônio particular
-                      dos herdeiros.
+                      Você sabe exatamente o que está sendo feito, quais são os
+                      próximos passos e acompanha tudo de perto, sem promessas
+                      vazias.
                     </p>
                   </div>
                 </div>

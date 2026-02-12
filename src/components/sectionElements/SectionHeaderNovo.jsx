@@ -64,7 +64,7 @@ function SectionHeaderNovo({
       <div className={`max-w-2xl mx-auto ${className} ${usage}`}>
         {miniTitle && (
           <span
-            className={`font-bold font-secondFont tracking-wider uppercase text-xs mb-2 block ${miniTag}`}
+            className={`font-bold font-secondFont tracking-wider uppercase text-xs mb-2 block text-paragraph3 ${miniTag}`}
           >
             {miniTitle}
           </span>
@@ -72,14 +72,16 @@ function SectionHeaderNovo({
 
         {title && (
           <h2
-            className={`text-3xl md:text-4xl font-mainFont font-medium mb-4 ${text}`}
+            className={`text-3xl leading-8 desktop1:text-4xl font-mainFont font-medium mb-4 ${text}`}
           >
             {title}
           </h2>
         )}
 
         {subtitle && (
-          <p className={`font-secondFont font-light ${textOpacity}`}>
+          <p
+            className={`font-secondFont font-light text-paragraph5 desktop1:text-paragraph4 ${textOpacity}`}
+          >
             {subtitle}
           </p>
         )}

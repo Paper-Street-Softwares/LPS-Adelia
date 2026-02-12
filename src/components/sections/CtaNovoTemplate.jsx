@@ -19,7 +19,7 @@ function CtaNovoTemplate({ colorMode }) {
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
-      backgroundMode = 'bg-terciary/60'
+      backgroundMode = 'bg-secondary'
       miniTagCtaDark = 'text-primaryDark'
       break
     case 'dark':
@@ -55,7 +55,7 @@ function CtaNovoTemplate({ colorMode }) {
               {content.texts.ctaSecondary.title}
             </h2>
             <p
-              className={`text-md font-secondFont font-light mx-auto mb-10 ${textOpacity}`}
+              className={`text-paragraph5 font-secondFont font-light mx-auto mb-10 ${textOpacity}`}
             >
               {content.texts.ctaSecondary.subtitle}
             </p>

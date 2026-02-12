@@ -36,12 +36,12 @@ function HeroTemplateNovo({
 }) {
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-secondary'
       bgFaixaHero = 'bg-secondary'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
-      bgMinitag = 'bg-white border-primaryDark text-primaryDark'
+      bgMinitag = 'bg-transparent border-primaryDark text-primaryDark'
       // textObs = 'text-green-500'
       image = ' border-[8px] border-white'
       bgAlertHero = 'bg-white'
@@ -75,35 +75,31 @@ function HeroTemplateNovo({
 
   const { showGlobalButton } = useColorMode()
 
-  const topicsCard = Object.values({
-    card1: {
-      icon: <Clock width={16} />,
+  const topicsCard = [
+    {
+      icon: <Clock size={16} />,
       text: (
         <p>
-          Recuperação do acesso em{' '}
-          <strong className={`text-[#778aab] font-bold underline`}>
-            48 horas
-          </strong>{' '}
-          mediante tutela de urgência
+          Recuperar o acesso em até{' '}
+          <strong className="underline font-bold">48 horas</strong> mediante
+          tutela de urgência
         </p>
       ),
     },
-    card2: {
-      icon: <CircleDollarSign width={16} />,
+    {
+      icon: <CircleDollarSign size={16} />,
       text: (
         <p>
-          Possibilidade de indenização por danos morais e patrimoniais de até{' '}
-          <strong className={`text-[#778aab] font-bold underline`}>
-            R$80.000,00
-          </strong>
+          Receber indenizações por danos patrimoniais e morais em até{' '}
+          <strong className="underline font-bold">R$30.000,00</strong>
         </p>
       ),
     },
-    card3: {
-      icon: <Users width={16} />,
-      text: 'Contas pessoais e profissionais',
+    {
+      icon: <Users size={16} />,
+      text: <p>Ter suporte em contas pessoais e profissionais</p>,
     },
-  })
+  ]
 
   return (
     <SectionArea
@@ -114,14 +110,14 @@ function HeroTemplateNovo({
     >
       <section className="relative w-full pt-[100px] phone2:pt-[120px] phone3:pt-[130px] pb-[30px] tablet1:pb-[64px] desktop1:pb-[96px] tablet1:pt-[140px] desktop1:pt-[180px] flex items-center justify-center overflow-hidden font-mainFont">
         {/* Abstract Background Shapes */}
-        <div
+        {/* <div
           className={`absolute top-0 right-[-10px] h-full w-[80%] -skew-x-12 translate-x-2/4 z-0 ${bgFaixaHero}`}
-        />
+        /> */}
         <div
           className={`absolute bottom-0 left-0 w-[40%] h-1/2 rounded-full blur-3xl -translate-x-1/4 translate-y-1/4 z-0 ${backgroundMode}`}
         />
         <SectionWrapper>
-          <div className="container relative z-10 grid lg:grid-cols-2 gap-4 phone2:gap-6 lg:gap-20 items-center">
+          <div className=" relative z-10 grid lg:grid-cols-2 gap-4 phone2:gap-6 lg:gap-20 items-center">
             {/* Content */}
 
             <motion.div
@@ -140,28 +136,30 @@ function HeroTemplateNovo({
                 {content.texts.hero.miniTag}
               </div>
               <h1
-                className={`desktop1:text-start text-[17px] phone2:text-[28px] phone3:text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.1] md:leading-[1.0] ${text} `}
+                className={`desktop1:text-start  text-[31px] phone2:text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.1] md:leading-[1.0] ${text} `}
               >
                 {content.texts.hero.title}
               </h1>
 
               <p
-                className={`text-start desktop1:text-start text-[9.2px] phone2:text-[13.8px] phone3:text-[16.1px] md:text-[23px] leading-relaxed max-w-lg font-secondFont font-extralight ${text}`}
+                className={`text-start desktop1:text-start text-lg md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight ${text}`}
               >
                 {content.texts.hero.subtitle}
               </p>
 
-              <div
-                className={`max-w-[360px] font-secondFont p-2 phone3:p-6 bg-terciary shadow-xl rounded-xl border border-[#778aab] text-[9.6px] phone2:text-[14.4px] phone3:text-[16.8px] flex flex-col gap-3`}
-              >
-                <h1>Ao entrar com ação, você pode:</h1>
+              <div className="max-w-[360px] bg-gradient-to-br from-[#7f8fb3] to-[#6c7ea6] text-white p-4 phone3:p-6 rounded-xl shadow-xl border border-white/20 font-secondFont flex flex-col gap-3 text-[9.6px] phone2:text-[14.4px] phone3:text-[16.8px]">
+                <h1 className="font-semibold">
+                  Ao entrar com ação, você pode:
+                </h1>
+
                 {topicsCard.map((item, index) => (
                   <div key={index} className="flex gap-2 items-start">
-                    <span className={`text-[#778aab]`}>{item.icon}</span>
-                    <p className={`font-medium ${text}`}>{item.text}</p>
+                    <span className="text-white/90 mt-[2px]">{item.icon}</span>
+                    <div className="font-medium leading-snug">{item.text}</div>
                   </div>
                 ))}
               </div>
+
               <div className="flex flex-col gap-4 pt-4">
                 <ButtonReflexo
                   icon={

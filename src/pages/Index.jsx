@@ -66,8 +66,9 @@ export default function Index() {
               ButtonModal={false}
               benefits={false}
             />
-            <SocialMediaTemplate colorMode={colorMode} />
+            {/* <SocialMediaTemplate colorMode={colorMode} /> */}
             <CtaNovoTemplate colorMode={colorMode} />
+            <Cards colorMode={colorMode} />
             <StepsNovoTemplate colorMode={colorMode} />
             <FooterNovoTemplate
               colorMode={colorMode}
@@ -83,7 +84,7 @@ export default function Index() {
             />
             <WhatsappAnimated colorMode={colorMode} />
             {/* <Diferences colorMode={colorMode} /> */}
-            {/* <Cards colorMode={colorMode} /> */}
+
             {/* <Emergency colorMode={colorMode} /> */}
             {/* <Speed colorMode={colorMode} /> */}
             {/* <FaqNovoTemplate colorMode={colorMode} /> */}

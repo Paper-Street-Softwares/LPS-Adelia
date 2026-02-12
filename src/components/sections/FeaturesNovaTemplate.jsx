@@ -33,7 +33,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
 
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-terciary/60'
+      backgroundMode = 'bg-secondary'
       bgAccordion = '#fff'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
@@ -62,7 +62,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
 
       break
     default:
-      backgroundMode = 'bg-secondary/60'
+      backgroundMode = 'bg-white'
       bgAccordion = '#fff'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
@@ -88,7 +88,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
     >
       <SectionWrapper>
         <section className="relative font-mainFont">
-          <div className="container mx-auto">
+          <div className=" mx-auto">
             <div className="flex flex-col-reverse desktop1:flex-row gap-16 items-center">
               {/* Imagem com destaque */}
               <div>

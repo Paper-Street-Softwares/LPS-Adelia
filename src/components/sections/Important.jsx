@@ -14,7 +14,7 @@ function Important({ colorMode }) {
   let backgroundMode, text, textOpacity, textDestaque, cardBg, iconBg
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-terciary/60'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       iconBg = 'bg-white text-primaryDark'

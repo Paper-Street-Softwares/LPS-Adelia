@@ -22,11 +22,11 @@ function CardsImportants({ title, paragraph, colorMode }) {
 
   return (
     <div className="relative h-fit bg-white shadow-lg max-w-[400px] py-12 px-10 rounded-[18px] flex flex-col gap-4 font-secondFont group hover:bg-primaryDark hover:text-white transition-all duration-700">
-      <h1 className="text-start font-bold text-[24px] leading-7 text-corTitulosPreto group-hover:text-white">
+      <h1 className="text-start font-bold text-[20px] leading-7 text-corTitulosPreto group-hover:text-white">
         {title}
       </h1>
 
-      <p className="text-start text-[19.2px] text-corOutrosTextosPreto group-hover:text-white">
+      <p className="text-start text-paragraph5 text-corOutrosTextosPreto group-hover:text-white">
         {paragraph}
       </p>
 

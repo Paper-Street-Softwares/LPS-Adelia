@@ -109,7 +109,7 @@ const content = {
       title: (
         <h1>
           Sua <span class="">rede social</span>{' '}
-          <span className="destaque relative italic font-light">
+          <span className="">
             {/* <span>
               <svg
                 className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
@@ -185,9 +185,8 @@ const content = {
       miniTag: 'Atenção',
       title: (
         <h1>
-          O que é importante saber ao{' '}
-          <span className="text-primaryDark">perder o acesso</span> à sua conta
-          online
+          O que é importante saber ao <span className="">perder o acesso</span>{' '}
+          à sua conta online
         </h1>
       ),
       cards: {
@@ -256,14 +255,13 @@ const content = {
       title: (
         <h1>
           O problema não é perder uma conta. É tudo o que você
-          <span className="destaque italic font-light"> perde junto</span> com
-          ela.
+          <span className=""> perde junto</span> com ela.
         </h1>
       ),
       subtitle: (
         <>
           Sua imagem e dados podem ser usados indevidamente para aplicar golpes.
-          <i> Hackers</i> também usam a sua audiência para divulgar produtos
+          <i>Hackers</i> também usam a sua audiência para divulgar produtos
           ilícitos.
         </>
       ),
@@ -417,7 +415,7 @@ const content = {
       title: (
         <h1>
           Especialista em
-          <span className="destaque italic font-light"> recuperar</span> contas
+          <span className=""> recuperar</span> contas
         </h1>
       ),
       SecondPartTitle: '',
@@ -434,7 +432,7 @@ const content = {
           Meu trabalho é orientar, agir rápido e buscar a recuperação da conta e
           a proteção dos seus direitos. Cada caso é tratado com estratégia,
           clareza e responsabilidade, porque sei que perder uma rede social não
-          é só perder um perfil — e ter a privacidade invadida, é perder renda,
+          é só perder um perfil — é ter a privacidade invadida, é perder renda,
           contatos e credibilidade.
         </div>
       ),
@@ -499,43 +497,39 @@ const content = {
     //   },
     // },
     steps: {
-      miniTag: 'Por que agir agora',
-      title: (
-        <h1>
-          Mais do que recuperar sua conta, é
-          <span className="destaque italic font-light"> proteger </span>o que
-          você construiu
-        </h1>
-      ),
-      subtitle: '',
+      miniTag: 'PASSO A PASSO',
+      title: <h1>Como funciona o atendimento para recuperação da sua conta</h1>,
+      subtitle:
+        'Um processo jurídico estruturado, rápido e focado em restabelecer seus direitos e seu acesso.',
       img: imgSteps,
       alt: 'Imagem ilustrativa da Seção Passo a Passo',
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Agilidade quando o tempo joga contra você',
+          cardTitle: 'Análise do caso',
           cardDescription:
-            'Quanto mais você demora, menores são as chances de recuperar a conta. Aqui, seu caso é analisado rapidamente para evitar prejuízos maiores.',
+            'Iremos avaliar o bloqueio ou invasão da conta, verificar os prejuízos envolvidos e definir a melhor estratégia jurídica para o seu caso.',
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'Você não enfrenta a plataforma só',
+          cardTitle: 'Coleta de provas',
           cardDescription:
-            'Bloqueios injustos, invasões e falhas acontecem. Ter apoio jurídico muda o jogo e aumenta suas chances de resolver.',
+            'São reunidos documentos, registros, e evidências que comprovam a titularidade da conta e o impacto causado pela perda do acesso.',
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'Proteção da sua imagem e do seu negócio',
+          cardTitle: 'Medidas jurídicas imediatas',
           cardDescription:
-            'Evite que seus dados e sua imagem continuem sendo usados de forma indevida, causando golpes, perdas financeiras e danos à sua reputação.',
+            'Com base nas provas, são adotadas as medidas legais cabíveis, incluindo pedido de tutela de urgência para recuperação rápida da conta.',
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'Clareza, estratégia e acompanhamento real',
+          cardTitle: 'Acompanhamento e solução',
           cardDescription:
-            'Você sabe exatamente o que está sendo feito, quais são os próximos passos e acompanha tudo de perto, sem promessas vazias.',
+            'O processo é acompanhado de perto até a recuperação da conta e, quando aplicável, a busca por indenização pelos danos sofridos.',
         },
       },
+
       ctaButtonText: 'A_Definir',
     },
     ctaSecondary: {
@@ -580,7 +574,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'Falar com a Dra Adelia Almeida agora mesmo',
+      ctaButtonText: 'Falar com a Dra Adélia A. Souza ',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
