@@ -86,7 +86,7 @@ function NavbarNovaTemplate({
                 alt={content.texts.navbar.logo.alt}
                 className="w-[100%]"
                 width={303}
-                height={69}
+                height={67}
                 fetchPriority="high"
               />
             </a>{' '}
