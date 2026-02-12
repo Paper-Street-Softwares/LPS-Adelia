@@ -20,7 +20,7 @@ export default {
         primaryLight: '#ECDACB',
         primaryDark: '#7f8fb3',
         secondary: '#FFF9F2',
-        terciary: '#F5F5F5',
+        terciary: '#ffffff',
         quartenary: '#FAFBFC',
         borderImage: '#292929',
         corExclamationCard: '#350F0F',

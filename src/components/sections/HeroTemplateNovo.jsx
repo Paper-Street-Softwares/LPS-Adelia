@@ -117,14 +117,14 @@ function HeroTemplateNovo({
           className={`absolute bottom-0 left-0 w-[40%] h-1/2 rounded-full blur-3xl -translate-x-1/4 translate-y-1/4 z-0 ${backgroundMode}`}
         />
         <SectionWrapper>
-          <div className=" relative z-10 grid lg:grid-cols-2 gap-4 phone2:gap-6 lg:gap-20 items-center">
+          <div className="relative z-10 grid lg:grid-cols-2 gap-4 phone2:gap-6 lg:gap-20 items-center w-full">
             {/* Content */}
 
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="space-y-2 desktop1:space-y-8 order-2 lg:order-1 flex flex-col items-start desktop1:items-start"
+              className="space-y-8 order-2 lg:order-1 flex flex-col items-start desktop1:items-start"
             >
               <div
                 className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border shadow-sm text-[8px] phone2:text-xs font-secondFont font-bold tracking-wide uppercase ${bgMinitag}`}
@@ -136,26 +136,28 @@ function HeroTemplateNovo({
                 {content.texts.hero.miniTag}
               </div>
               <h1
-                className={`desktop1:text-start  text-[31px] phone2:text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.1] md:leading-[1.0] ${text} `}
+                className={` desktop1:text-start text-[31px] phone2:text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.1] ${text} `}
               >
                 {content.texts.hero.title}
               </h1>
 
               <p
-                className={`text-start desktop1:text-start text-lg md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight ${text}`}
+                className={`text-start desktop1:text-start text-lg md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight ${textOpacity}`}
               >
                 {content.texts.hero.subtitle}
               </p>
 
               <div className="max-w-[360px] bg-gradient-to-br from-[#7f8fb3] to-[#6c7ea6] text-white p-4 phone3:p-6 rounded-xl shadow-xl border border-white/20 font-secondFont flex flex-col gap-3 text-[9.6px] phone2:text-[14.4px] phone3:text-[16.8px]">
-                <h1 className="font-semibold">
+                <h1 className="font-semibold text-paragraph4">
                   Ao entrar com ação, você pode:
                 </h1>
 
                 {topicsCard.map((item, index) => (
                   <div key={index} className="flex gap-2 items-start">
                     <span className="text-white/90 mt-[2px]">{item.icon}</span>
-                    <div className="font-medium leading-snug">{item.text}</div>
+                    <div className="font-medium leading-snug text-paragraph3">
+                      {item.text}
+                    </div>
                   </div>
                 ))}
               </div>

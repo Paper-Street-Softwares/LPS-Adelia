@@ -38,7 +38,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
-      cardBg = 'bg-quartenary'
+      cardBg = 'bg-white'
       iconBg = 'bg-white text-primaryDark'
       image = ' border-[8px] border-white'
       hoverCardBg = 'hover:bg-primaryDark hover:text-white'
