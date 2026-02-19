@@ -1,16 +1,16 @@
-import logo from '../assets/imgs/logo/logo.webp'
-import heroDefaultImg from '../assets/imgs/hero/lawHero.webp'
-import heroDefaultMobileImg from '../assets/imgs/hero/lawHeroMobile.webp'
-import bgInstagram from '../assets/imgs/hero/bgInstagram.webp'
+import logo from "../assets/imgs/logo/logo.webp";
+import heroDefaultImg from "../assets/imgs/hero/lawHero.webp";
+import heroDefaultMobileImg from "../assets/imgs/hero/lawHeroMobile.webp";
+import bgInstagram from "../assets/imgs/hero/bgInstagram.webp";
 
-import imgFeatures from '../assets/imgs/features/imgServices.webp'
+import imgFeatures from "../assets/imgs/features/imgServices.webp";
 
-import aboutImg from '../assets/imgs/about/aboutImg.webp'
+import aboutImg from "../assets/imgs/about/aboutImg.webp";
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
-import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
+import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
-import imgSteps from '../assets/imgs/steps/imgSteps.webp'
+import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 
 import {
   BriefcaseBusiness,
@@ -20,31 +20,31 @@ import {
   Check,
   Users,
   User,
-} from 'lucide-react'
+} from "lucide-react";
 
-import { FileText } from 'lucide-react'
+import { FileText } from "lucide-react";
 
-const currentYear = new Date().getFullYear()
+const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: 'Dra. Adelia Almeida',
-  email: 'contato', // Email desejado pelo cliente
-  emailSecundario: 'adeliaas@outlook.com ', // Email desejado pelo cliente
-  domain: 'adeliaadv.com.br', // Sem "www"
+  name: "Dra. Adelia Almeida",
+  email: "contato", // Email desejado pelo cliente
+  emailSecundario: "adeliaas@outlook.com ", // Email desejado pelo cliente
+  domain: "adeliaadv.com.br", // Sem "www"
   phone: {
-    ddd: '21',
-    firstPart: '97048', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '4958', // Apenas os 4 últimos números
+    ddd: "21",
+    firstPart: "97048", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "4958", // Apenas os 4 últimos números
   },
   phoneSecundario: {
-    ddd: 'A_Definir',
-    firstPart: 'A_Definir', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: 'A_Definir', // Apenas os 4 últimos números
+    ddd: "A_Definir",
+    firstPart: "A_Definir", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "A_Definir", // Apenas os 4 últimos números
   },
   phoneTerciario: {
-    ddd: 'A_Definir',
-    firstPart: 'A_Definir', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: 'A_Definir', // Apenas os 4 últimos números
+    ddd: "A_Definir",
+    firstPart: "A_Definir", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "A_Definir", // Apenas os 4 últimos números
   },
   endereco: (
     <div>
@@ -67,18 +67,18 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: 'adelia.adv', // Sem o @
-  facebookProfile: '',
-  linkeDinProfile: '',
-  x: '',
-  tiktokProfile: '',
+  instagramProfile: "adelia.adv", // Sem o @
+  facebookProfile: "",
+  linkeDinProfile: "",
+  x: "",
+  tiktokProfile: "",
 
   whatsappDefaultMessage:
-    'Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.',
+    "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
   whatsChatDefaultMessage:
-    'Gostaria de falar conosco agora mesmo? Clque abaixo 👇',
-  slogan: '',
-}
+    "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
+  slogan: "",
+};
 
 const content = {
   texts: {
@@ -92,23 +92,23 @@ const content = {
         alt: `Logomarca ${infos.name}`,
       },
       menuItems: [
-        'Início',
-        'Serviços',
-        'Sobre',
+        "Início",
+        "Serviços",
+        "Sobre",
         // 'Perguntas',
         // 'Blog',
         // 'Mapa',
       ],
-      menuId: ['home', 'feature', 'about'],
-      ariaLabel: 'Botão de Contato',
-      ctaButtonText: 'Contato',
-      ctaButtonTextResponsive: 'Contato',
+      menuId: ["home", "steps", "about"],
+      ariaLabel: "Botão de Contato",
+      ctaButtonText: "Contato",
+      ctaButtonTextResponsive: "Contato",
     },
     hero: {
-      miniTag: 'Recuperação de redes sociais no RJ e SP',
+      miniTag: "Recuperação de redes sociais no RJ e SP",
       title: (
         <h1>
-          Sua <span class="">rede social</span>{' '}
+          Sua <span class="">rede social</span>{" "}
           <span className="">
             {/* <span>
               <svg
@@ -150,52 +150,52 @@ const content = {
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
-      alt: 'Imagem ilustrativa da Seção Início',
+      alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
-        'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Tire sua dúvida conosco',
-      ctaButtonTextSecondary: 'A_Definir',
+        "Botão para chamada de ação para contato pelo whatsapp",
+      ctaButtonText: "Tire sua dúvida conosco",
+      ctaButtonTextSecondary: "A_Definir",
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'A_Definir',
-        textTwo: 'A_Definir',
+        text: "A_Definir",
+        textTwo: "A_Definir",
       },
-      secondaryCta: 'Contato',
+      secondaryCta: "Contato",
       images: {
         static: {
           img: {},
-          alt: '',
+          alt: "",
         },
         slide1: {
           img: {},
-          alt: '',
+          alt: "",
         },
         slide2: {
           img: {},
-          alt: '',
+          alt: "",
         },
         slide3: {
           img: {},
-          alt: '',
+          alt: "",
         },
       },
     },
     important: {
-      miniTag: 'Atenção',
+      miniTag: "Atenção",
       title: (
         <h1>
-          O que é importante saber ao <span className="">perder o acesso</span>{' '}
+          O que é importante saber ao <span className="">perder o acesso</span>{" "}
           à sua conta online
         </h1>
       ),
       cards: {
         card1: {
           title:
-            'Minha conta foi invadida ou suspensa. Posso fazer alguma coisa?',
+            "Minha conta foi invadida ou suspensa. Posso fazer alguma coisa?",
           paragraph: (
             <p>
-              Sim. Em muitos casos é possível <strong>recuperar a conta</strong>{' '}
+              Sim. Em muitos casos é possível <strong>recuperar a conta</strong>{" "}
               e <strong>responsabilizar quem causou o dano</strong>,
               principalmente quando há falha da plataforma ou uso indevido dos
               seus dados. <br />
@@ -204,40 +204,40 @@ const content = {
           ),
         },
         card2: {
-          title: 'Existe prazo para agir ou recorrer?',
+          title: "Existe prazo para agir ou recorrer?",
           paragraph: (
             <p>
-              Sim. Quanto mais o tempo passa,{' '}
+              Sim. Quanto mais o tempo passa,{" "}
               <strong>mais difícil fica provar o prejuízo</strong> e reverter a
               situação. <br />
-              Além disso, deixar para depois pode fazer{' '}
+              Além disso, deixar para depois pode fazer{" "}
               <strong>você perder provas importantes</strong>. <br />
-              Por isso, o ideal é buscar orientação jurídica{' '}
+              Por isso, o ideal é buscar orientação jurídica{" "}
               <strong>imediatamente</strong>.
             </p>
           ),
         },
         card3: {
-          title: 'Se eu não fizer nada, o que pode acontecer?',
+          title: "Se eu não fizer nada, o que pode acontecer?",
           paragraph: (
             <p>
               Além de <strong>perder definitivamente a conta</strong>, seus
               dados podem continuar sendo usados para golpes, sua imagem pode
-              ser prejudicada e você pode{' '}
-              <strong>sofrer prejuízos financeiros e profissionais</strong>{' '}
+              ser prejudicada e você pode{" "}
+              <strong>sofrer prejuízos financeiros e profissionais</strong>{" "}
               difíceis de reverter.
             </p>
           ),
         },
         card4: {
           title:
-            'Por que procurar ajuda mesmo achando que “não tem o que fazer”?',
+            "Por que procurar ajuda mesmo achando que “não tem o que fazer”?",
           paragraph: (
             <p>
-              Porque muitas suspensões e invasões{' '}
-              <strong>não acontecem por culpa do usuário.</strong>. <br />
+              Porque muitas suspensões e invasões{" "}
+              <strong>não acontecem por culpa do usuário.</strong> <br />
               Falhas de segurança, denúncias indevidas e abuso da plataforma são
-              comuns — e{' '}
+              comuns — e{" "}
               <strong>
                 podem gerar direito à recuperação da conta e indenização
               </strong>
@@ -247,11 +247,11 @@ const content = {
         },
       },
       fraseObs:
-        'Entre em contato conosco e lhe daremos todo o suporte necessário',
-      ctaButtonText: 'Falar conosco agora pelo WhatsApp',
+        "Entre em contato conosco e lhe daremos todo o suporte necessário",
+      ctaButtonText: "Falar conosco agora pelo WhatsApp",
     },
     features: {
-      miniTag: 'O momento que sua conta é perdida',
+      miniTag: "O momento que sua conta é perdida",
       title: (
         <h1>
           O problema não é perder uma conta. É tudo o que você
@@ -265,15 +265,15 @@ const content = {
         </>
       ),
       imgFeatures: imgFeatures,
-      alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: '100%',
-      subtitleMessageFeature: 'comprometida com sua vida digital',
+      alt: "imagem representativa da Seção Serviços",
+      titleMessageFeature: "100%",
+      subtitleMessageFeature: "comprometida com sua vida digital",
       cards: {
         card1: {
-          title: 'Quando usam sua foto e seus dados para aplicar golpes',
+          title: "Quando usam sua foto e seus dados para aplicar golpes",
           subtitle: (
             <>
-              {' '}
+              {" "}
               Sua imagem e dados podem ser usados indevidamente para aplicar
               golpes. <i>Hackers</i> também usam a sua audiência para divulgar
               produtos ilícitos.
@@ -288,13 +288,13 @@ const content = {
             </div>
           ),
           icon: <User />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card2: {
-          title: 'Quando todo o seu conteúdo simplesmente some',
+          title: "Quando todo o seu conteúdo simplesmente some",
           subtitle:
-            'Anos de posts, stories e provas do seu trabalho podem desaparecer em segundos.',
+            "Anos de posts, stories e provas do seu trabalho podem desaparecer em segundos.",
           description: (
             <div>
               A_Definir
@@ -304,13 +304,13 @@ const content = {
             </div>
           ),
           icon: <AlertTriangle />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card3: {
-          title: 'Quando você perde todos os seguidores de uma vez',
+          title: "Quando você perde todos os seguidores de uma vez",
           subtitle:
-            'Toda a audiência que você construiu com esforço deixa de ser sua da noite pro dia.',
+            "Toda a audiência que você construiu com esforço deixa de ser sua da noite pro dia.",
           description: (
             <div>
               A_Definir <br />
@@ -319,13 +319,13 @@ const content = {
             </div>
           ),
           icon: <Users />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card4: {
-          title: 'Quando você fica sem sua principal ferramenta de trabalho',
+          title: "Quando você fica sem sua principal ferramenta de trabalho",
           subtitle:
-            'Você perde renda, visibilidade e o principal canal de contato com seu público.',
+            "Você perde renda, visibilidade e o principal canal de contato com seu público.",
           description: (
             <div>
               A_Definir
@@ -335,12 +335,12 @@ const content = {
             </div>
           ),
           icon: <BriefcaseBusiness />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card5: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: "A_Definir",
+          subtitle: "A_Definir",
           description: (
             <div>
               A_Definir
@@ -367,12 +367,12 @@ const content = {
               <path d="M12 18V6" />
             </svg>
           ),
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card6: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: "A_Definir",
+          subtitle: "A_Definir",
           description: (
             <div>
               A_Definir
@@ -382,50 +382,50 @@ const content = {
             </div>
           ),
           icon: <Scale />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
       },
       moreFeatures: {
         card1: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          ico: "A_Definir",
+          title: "A_Definir",
+          subtitle: "A_Definir",
         },
         card2: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          ico: "A_Definir",
+          title: "A_Definir",
+          subtitle: "A_Definir",
         },
         card3: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          ico: "A_Definir",
+          title: "A_Definir",
+          subtitle: "A_Definir",
         },
       },
-      ctaButtonText: 'Veja como agir para proteger e recuperar sua conta',
+      ctaButtonText: "Veja como agir para proteger e recuperar sua conta",
     },
     maps: {
-      minitag: 'A_Definir',
-      title: 'A_Definir',
-      subtitle: 'A_Definir',
-      embedsrc: 'A_Definir',
+      minitag: "A_Definir",
+      title: "A_Definir",
+      subtitle: "A_Definir",
+      embedsrc: "A_Definir",
     },
     about: {
       imagem: {
         img: aboutImg,
-        alt: 'Imagem ilustrativa da Seção Sobre',
+        alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: 'Quem está por trás da solução',
+      miniTag: "Quem está por trás da solução",
       title: (
         <h1>
           Especialista em
           <span className=""> recuperar</span> contas
         </h1>
       ),
-      SecondPartTitle: '',
+      SecondPartTitle: "",
       subtitle:
-        'Atuação jurídica focada em proteger negócios e perfis nas redes sociais',
+        "Atuação jurídica focada em proteger negócios e perfis nas redes sociais",
       paragraph: (
         <div>
           Sou advogada especialista em direito digital. Atendo pessoas e
@@ -442,7 +442,7 @@ const content = {
         </div>
       ),
 
-      buttonModalLabelAbout: 'Continuar lendo',
+      buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="text-mutedForeground font-secondFont">
           A_Definir
@@ -454,27 +454,27 @@ const content = {
           A_Definir
         </p>
       ),
-      paragraphModalCta: 'Entre em contato',
-      titleModal: 'A_Definir',
-      ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'Falar diretamente comigo',
+      paragraphModalCta: "Entre em contato",
+      titleModal: "A_Definir",
+      ctaButtonAriaLabel: "Botão para entrar em contato",
+      ctaButtonText: "Falar diretamente comigo",
       aboutSocial: {
         img: {
           img: aboutSocialImg,
           alt: `Foto do Instagram do ${infos.name}`,
-          altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
+          altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
         },
-        miniTag: 'REDES SOCIAIS',
-        title: 'Conecte-se conosco',
+        miniTag: "REDES SOCIAIS",
+        title: "Conecte-se conosco",
         subtitle:
-          'Acompanhe nossas redes sociais para se manter informado sobre conteúdos jurídicos, atualizações e temas relevantes das áreas de atuação.',
+          "Acompanhe nossas redes sociais para se manter informado sobre conteúdos jurídicos, atualizações e temas relevantes das áreas de atuação.",
         paragraph: <p></p>,
-        labelInstagram: 'Siga-nos no Instagram',
-        labelFacebook: 'Siga-nos no Facebook',
-        labelLinkedin: 'Siga-nos no LinkedIn',
-        labelX: 'Siga-nos no X',
-        labelTiktok: 'Siga-nos no Tik Tok',
-        labelYoutube: 'Siga-nos no Youtube',
+        labelInstagram: "Siga-nos no Instagram",
+        labelFacebook: "Siga-nos no Facebook",
+        labelLinkedin: "Siga-nos no LinkedIn",
+        labelX: "Siga-nos no X",
+        labelTiktok: "Siga-nos no Tik Tok",
+        labelYoutube: "Siga-nos no Youtube",
       },
     },
     // team: {
@@ -502,43 +502,43 @@ const content = {
     //   },
     // },
     steps: {
-      miniTag: 'PASSO A PASSO',
+      miniTag: "PASSO A PASSO",
       title: <h1>Como funciona o atendimento para recuperação da sua conta</h1>,
       subtitle:
-        'Um processo jurídico estruturado, rápido e focado em restabelecer seus direitos e seu acesso.',
+        "Um processo jurídico estruturado, rápido e focado em restabelecer seus direitos e seu acesso.",
       img: imgSteps,
-      alt: 'Imagem ilustrativa da Seção Passo a Passo',
+      alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Análise do caso',
+          cardTitle: "Análise do caso",
           cardDescription:
-            'Iremos avaliar o bloqueio ou invasão da conta, verificar os prejuízos envolvidos e definir a melhor estratégia jurídica para o seu caso.',
+            "Iremos avaliar o bloqueio ou invasão da conta, verificar os prejuízos envolvidos e definir a melhor estratégia jurídica para o seu caso.",
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'Coleta de provas',
+          cardTitle: "Coleta de provas",
           cardDescription:
-            'São reunidos documentos, registros, e evidências que comprovam a titularidade da conta e o impacto causado pela perda do acesso.',
+            "São reunidos documentos, registros, e evidências que comprovam a titularidade da conta e o impacto causado pela perda do acesso.",
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'Medidas jurídicas imediatas',
+          cardTitle: "Medidas jurídicas imediatas",
           cardDescription:
-            'Com base nas provas, são adotadas as medidas legais cabíveis, incluindo pedido de tutela de urgência para recuperação rápida da conta.',
+            "Com base nas provas, são adotadas as medidas legais cabíveis, incluindo pedido de tutela de urgência para recuperação rápida da conta.",
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'Acompanhamento e solução',
+          cardTitle: "Acompanhamento e solução",
           cardDescription:
-            'O processo é acompanhado de perto até a recuperação da conta e, quando aplicável, a busca por indenização pelos danos sofridos.',
+            "O processo é acompanhado de perto até a recuperação da conta e, quando aplicável, a busca por indenização pelos danos sofridos.",
         },
       },
 
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: "A_Definir",
     },
     ctaSecondary: {
-      miniTag: 'Fale conosco',
+      miniTag: "Fale conosco",
       title: <h1>Não espere mais para recuperar sua conta</h1>,
       subtitle: (
         <div>
@@ -552,19 +552,19 @@ const content = {
       container: {
         label1: {
           icon: <Check />,
-          text: ' Avaliação jurídica sobre invasão, bloqueio ou suspensão da conta',
+          text: " Avaliação jurídica sobre invasão, bloqueio ou suspensão da conta",
         },
         label2: {
           icon: <Check />,
-          text: ' Orientação clara sobre provas, prazos e próximos passos',
+          text: " Orientação clara sobre provas, prazos e próximos passos",
         },
         label3: {
           icon: <Check />,
-          text: 'Atuação para recuperação da conta e responsabilização da plataforma',
+          text: "Atuação para recuperação da conta e responsabilização da plataforma",
         },
         label4: {
           icon: <Check />,
-          text: 'Acompanhamento do caso até a solução, com comunicação direta',
+          text: "Acompanhamento do caso até a solução, com comunicação direta",
         },
         // label5: {
         //   icon: <Check />,
@@ -579,9 +579,9 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'Falar com a Dra Adélia A. Souza ',
+      ctaButtonText: "Falar com a Dra Adélia A. Souza ",
       ctaButtonAriaLabel:
-        'Botão para chamada de ação para contato pelo whatsapp',
+        "Botão para chamada de ação para contato pelo whatsapp",
     },
     // blog: {
     //   miniTag: 'BLOG',
@@ -593,28 +593,28 @@ const content = {
     //   blogLink: 'mauromoncao.wordpress.com', //sem "https://"
     // },
     faq: {
-      miniTag: 'A_Definir',
-      title: 'A_Definir',
-      subtitle: 'A_Definir',
+      miniTag: "A_Definir",
+      title: "A_Definir",
+      subtitle: "A_Definir",
       questions: {
         question1: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: "A_Definir",
+          answer: "A_Definir",
         },
         question2: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: "A_Definir",
+          answer: "A_Definir",
         },
         question3: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: "A_Definir",
+          answer: "A_Definir",
         },
         question4: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: "A_Definir",
+          answer: "A_Definir",
         },
       },
-      paragraph: 'Clique aqui caso tenha mais dúvidas',
+      paragraph: "Clique aqui caso tenha mais dúvidas",
     },
     // team: {
     //   miniTag: 'A_Definir',
@@ -884,13 +884,13 @@ const content = {
     // },
     footer: {
       copyrightLine: ` ${currentYear} - ${infos.name} - Todos os direitos reservados`,
-      footerDivulgacaoText: 'Gostaria de ter um site como este? Clique aqui',
-      midSectionName: 'Até mais',
+      footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
+      midSectionName: "Até mais",
       footerText:
-        'Agradecemos sua visita! Esperamos que em breve você se torne nosso cliente e desfrute de todos os benefícios que oferecemos.',
-      footerSocialText: 'Siga a gente nas redes sociais:',
-      footerNavegacaoText: 'NAVEGAÇÃO',
-      desenvolvidoPor: 'Desenvolvido com excelência por Paper Street',
+        "Agradecemos sua visita! Esperamos que em breve você se torne nosso cliente e desfrute de todos os benefícios que oferecemos.",
+      footerSocialText: "Siga a gente nas redes sociais:",
+      footerNavegacaoText: "NAVEGAÇÃO",
+      desenvolvidoPor: "Desenvolvido com excelência por Paper Street",
       privacidade: (
         <div class="phone3:max-w-3xl mx-auto tablet1:px-6 text-gray-900 leading-relaxed font-secondFont">
           <h1 class="text-3xl font-bold mb-6">Política de Privacidade</h1>
@@ -916,7 +916,7 @@ const content = {
 
           <ul class="list-disc ml-6 mb-6 space-y-2">
             <li>
-              <strong>Autoridade Nacional de Proteção de Dados (ANPD):</strong>{' '}
+              <strong>Autoridade Nacional de Proteção de Dados (ANPD):</strong>{" "}
               órgão responsável pela fiscalização e aplicação da LGPD.
             </li>
 
@@ -1123,9 +1123,9 @@ const content = {
         </div>
       ),
       pontos: {
-        ponto1: 'Profissionalismo',
-        ponto2: 'Experiência',
-        ponto3: 'Resultados',
+        ponto1: "Profissionalismo",
+        ponto2: "Experiência",
+        ponto3: "Resultados",
       },
     },
     // socios: {
@@ -1197,8 +1197,8 @@ const content = {
       year: currentYear,
       footerexpediente: infos.expediente,
       obsFooter: infos.obs,
-      footerNavegacaoText: 'NAVEGAÇÃO',
-      footerDivulgacaoText: 'Gostaria de ter um site como este? Clique aqui',
+      footerNavegacaoText: "NAVEGAÇÃO",
+      footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
     },
     svgs: {
       wpp: (
@@ -1214,11 +1214,11 @@ const content = {
       ),
     },
   },
-}
+};
 
 export const abstractions = {
   titleModal: <strong>{content.texts.about.title}</strong>,
   subtitleModal: <strong>{content.texts.about.subtitle}</strong>,
-}
+};
 
-export default content
+export default content;

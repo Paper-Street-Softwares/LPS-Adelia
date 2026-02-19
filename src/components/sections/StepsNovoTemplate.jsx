@@ -1,16 +1,16 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import SectionArea from '../sectionElements/SectionArea'
-import SectionWrapper from '../sectionElements/SectionWrapper'
-import content from '../../content/content'
-import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
-import ButtonReflexo from '../interactives/ButtonReflexo'
-import ButtonAlert from '../interactives/ButtonAlert'
-import { Phone } from 'lucide-react'
-import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import React from "react";
+import { motion } from "framer-motion";
+import SectionArea from "../sectionElements/SectionArea";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import content from "../../content/content";
+import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
+import ButtonReflexo from "../interactives/ButtonReflexo";
+import ButtonAlert from "../interactives/ButtonAlert";
+import { Phone } from "lucide-react";
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 
 function StepsNovoTemplate({ colorMode }) {
-  const steps = Object.values(content.texts.steps.cards)
+  const steps = Object.values(content.texts.steps.cards);
 
   // Classes dinâmicas conforme colorMode
   let text,
@@ -20,43 +20,43 @@ function StepsNovoTemplate({ colorMode }) {
     stepNumberText,
     lineColor,
     textDestaque,
-    image
+    image;
 
   switch (colorMode) {
-    case 'light':
-      backgroundMode = 'bg-secondary'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      stepNumberBg = 'bg-white'
-      stepNumberText = 'text-primaryDark'
-      lineColor = 'bg-primaryDark/20'
-      textDestaque = 'text-primaryDark'
-      image = ' border-[8px] border-white'
-      break
-    case 'dark':
-      backgroundMode = 'bg-black'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      stepNumberBg = 'bg-dark'
-      stepNumberText = 'text-primaryLight'
-      lineColor = 'bg-primaryLight/20'
-      textDestaque = 'text-primaryLight'
-      image = ' border-[8px] border-borderImage'
+    case "light":
+      backgroundMode = "bg-secondary";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      stepNumberBg = "bg-white";
+      stepNumberText = "text-primaryDark";
+      lineColor = "bg-primaryDark/20";
+      textDestaque = "text-primaryDark";
+      image = " border-[8px] border-white";
+      break;
+    case "dark":
+      backgroundMode = "bg-black";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      stepNumberBg = "bg-dark";
+      stepNumberText = "text-primaryLight";
+      lineColor = "bg-primaryLight/20";
+      textDestaque = "text-primaryLight";
+      image = " border-[8px] border-borderImage";
 
-      break
+      break;
     default:
-      backgroundMode = 'bg-secondary/60'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      stepNumberBg = 'bg-white'
-      stepNumberText = 'text-primaryDark'
-      lineColor = 'bg-primaryDark/20'
-      textDestaque = 'text-primaryDark'
-      image = ' border-[8px] border-white'
+      backgroundMode = "bg-secondary/60";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      stepNumberBg = "bg-white";
+      stepNumberText = "text-primaryDark";
+      lineColor = "bg-primaryDark/20";
+      textDestaque = "text-primaryDark";
+      image = " border-[8px] border-white";
   }
 
   return (
-    <SectionArea className={backgroundMode} data-theme={colorMode}>
+    <SectionArea className={backgroundMode} data-theme={colorMode} id="steps">
       <SectionWrapper>
         <section>
           <div className=" mx-auto">
@@ -65,7 +65,7 @@ function StepsNovoTemplate({ colorMode }) {
               <MotionDivDownToUp
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, ease: 'easeOut' }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
                 className="order-2 lg:order-1 relative"
               >
                 {/* <div
@@ -78,7 +78,7 @@ function StepsNovoTemplate({ colorMode }) {
                 <div
                   className={`relative rounded-[2.5rem] overflow-hidden shadow-2xl ring-1 ring-black/5 bg-gray-100 ${image}`}
                 >
-                  {' '}
+                  {" "}
                   <img
                     src={content.texts.steps.img}
                     alt={content.texts.steps.alt}
@@ -120,7 +120,7 @@ function StepsNovoTemplate({ colorMode }) {
               <MotionDivDownToUp
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
                 className="order-1 lg:order-2 space-y-12"
               >
                 <SectionHeaderNovo
@@ -164,7 +164,7 @@ function StepsNovoTemplate({ colorMode }) {
         </section>
       </SectionWrapper>
     </SectionArea>
-  )
+  );
 }
 
-export default StepsNovoTemplate
+export default StepsNovoTemplate;
