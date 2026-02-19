@@ -1,8 +1,8 @@
-import React from 'react'
-import SectionArea from '../sectionElements/SectionArea'
-import SectionWrapper from '../sectionElements/SectionWrapper'
-import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
-import { motion } from 'framer-motion'
+import React from "react";
+import SectionArea from "../sectionElements/SectionArea";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
+import { motion } from "framer-motion";
 import {
   Scale,
   HomeIcon,
@@ -11,7 +11,7 @@ import {
   Shield,
   Users,
   Clock,
-} from 'lucide-react'
+} from "lucide-react";
 
 function Cards({ colorMode }) {
   let text,
@@ -22,42 +22,42 @@ function Cards({ colorMode }) {
     lineColor,
     textDestaque,
     image,
-    borderT
+    borderT;
 
   switch (colorMode) {
-    case 'light':
-      backgroundMode = 'bg-terciary/60'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      stepNumberBg = 'bg-white'
-      stepNumberText = 'text-primaryDark'
-      lineColor = 'bg-primaryDark/20'
-      textDestaque = 'text-primaryDark'
-      image = ' border-[8px] border-white'
-      borderT = 'border-t-primaryDark'
-      break
-    case 'dark':
-      backgroundMode = 'bg-darkOpacity'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      stepNumberBg = 'bg-dark'
-      stepNumberText = 'text-primaryLight'
-      lineColor = 'bg-primaryLight/20'
-      textDestaque = 'text-primaryLight'
-      image = ' border-[8px] border-borderImage'
-      borderT = 'border-t-primaryLight'
+    case "light":
+      backgroundMode = "bg-terciary/60";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      stepNumberBg = "bg-white";
+      stepNumberText = "text-primaryDark";
+      lineColor = "bg-primaryDark/20";
+      textDestaque = "text-primaryDark";
+      image = " border-[8px] border-white";
+      borderT = "border-t-primaryDark";
+      break;
+    case "dark":
+      backgroundMode = "bg-darkOpacity";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      stepNumberBg = "bg-dark";
+      stepNumberText = "text-primaryLight";
+      lineColor = "bg-primaryLight/20";
+      textDestaque = "text-primaryLight";
+      image = " border-[8px] border-borderImage";
+      borderT = "border-t-primaryLight";
 
-      break
+      break;
     default:
-      backgroundMode = 'bg-secondary/60'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      stepNumberBg = 'bg-white'
-      stepNumberText = 'text-primaryDark'
-      lineColor = 'bg-primaryDark/20'
-      textDestaque = 'text-primaryDark'
-      image = ' border-[8px] border-white'
-      borderT = 'border-t-primaryDark'
+      backgroundMode = "bg-secondary/60";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      stepNumberBg = "bg-white";
+      stepNumberText = "text-primaryDark";
+      lineColor = "bg-primaryDark/20";
+      textDestaque = "text-primaryDark";
+      image = " border-[8px] border-white";
+      borderT = "border-t-primaryDark";
   }
   return (
     <SectionArea className={`${backgroundMode}`}>
@@ -82,7 +82,7 @@ function Cards({ colorMode }) {
                 <div
                   className={`h-full cursor-pointer border-t-4 bg-white ${borderT} hover:shadow-xl transition-shadow duration-300`}
                 >
-                  {' '}
+                  {" "}
                   <div className="pt-8 px-6 pb-8 h-full flex flex-col">
                     <div className="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-primary mb-6">
                       <Clock className="w-7 h-7" />
@@ -116,7 +116,7 @@ function Cards({ colorMode }) {
                       <Users className="w-7 h-7" />
                     </div>
                     <h1 className="text-xl font-secondFont font-bold text-primary mb-3">
-                      Você não enfrenta a plataforma só
+                      Você não enfrenta a plataforma sozinho
                     </h1>
                     <p
                       className={`font-secondFont text-sm ${textOpacity} leading-relaxed flex-grow`}
@@ -138,7 +138,7 @@ function Cards({ colorMode }) {
                 <div
                   className={`h-full cursor-pointer border-t-4 bg-white ${borderT} hover:shadow-xl transition-shadow duration-300`}
                 >
-                  {' '}
+                  {" "}
                   <div className="pt-8 px-6 pb-8 h-full flex flex-col">
                     <div className="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-primary mb-6">
                       <Shield className="w-7 h-7" />
@@ -189,7 +189,7 @@ function Cards({ colorMode }) {
         </section>
       </SectionWrapper>
     </SectionArea>
-  )
+  );
 }
 
-export default Cards
+export default Cards;
