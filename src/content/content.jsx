@@ -543,9 +543,9 @@ const content = {
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Cada dia de atraso reduz as chances de recuperação e aumenta os
-            prejuízos. A gente cuida de tudo por você — com agilidade, segurança
-            e orientação jurídica.
+            Cada dia de atraso reduz as chances de recuperação e aumentam os
+            prejuízos. <br />A gente cuida de tudo por você — com agilidade,
+            segurança e orientação jurídica.
           </p>
         </div>
       ),
